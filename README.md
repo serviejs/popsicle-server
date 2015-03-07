@@ -16,16 +16,16 @@ npm install popsicle-server --save
 ## Usage
 
 ```js
-var request = require('popsicle');
-var server  = require('popsicle-server');
-var express = require('express');
-var app     = express();
+var request = require('popsicle')
+var server = require('popsicle-server')
+var express = require('express')
+var app = express()
 
 request('/users')
   .use(server(app))
   .then(function (res) {
-    console.log(res.status); //=> 404
-  });
+    console.log(res.status) //=> 404
+  })
 ```
 
 ## License

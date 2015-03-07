@@ -1,9 +1,9 @@
-var serverAddress = require('server-address');
+var serverAddress = require('server-address')
 
 /**
- * Export `popsicleServer`.
+ * Exports `popsicleServer`.
  */
-module.exports = popsicleServer;
+module.exports = popsicleServer
 
 /**
  * Create a request interceptor that listens and disconnects automatically.
@@ -12,17 +12,19 @@ module.exports = popsicleServer;
  * @return {Function}
  */
 function popsicleServer (app) {
-  var server = serverAddress(app);
+  var server = serverAddress(app)
 
   return function (req) {
-    server.listen();
+    req.before(function () {
+      server.listen()
 
-    req.progress(function (e) {
-      if (e.completed === 1) {
-        server.close();
-      }
-    });
+      // Update the URL before the request runs.
+      req.url = server.url(req.url)
+    })
 
-    req.url = server.url(req.url);
-  };
+    req.always(function () {
+      console.log('after')
+      server.close()
+    })
+  }
 }
