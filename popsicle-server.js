@@ -23,7 +23,6 @@ function popsicleServer (app) {
     })
 
     req.always(function () {
-      console.log('after')
       server.close()
     })
   }
