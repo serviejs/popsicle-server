@@ -36,7 +36,7 @@
     "es6-promise": "^2.0.1",
     "istanbul": "^0.3.5",
     "mocha": "^2.1.0",
-    "popsicle": "^0.4.0",
+    "popsicle": "^0.5.6",
     "pre-commit": "^1.0.6",
     "standard": "^3.0.0-alpha"
   },
