@@ -9,7 +9,7 @@ Automatically connect HTTP(s) servers to a randomly available port for each requ
 
 ## Installation
 
-```sh
+```
 npm install popsicle-server --save
 ```
 
