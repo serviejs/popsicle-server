@@ -1,6 +1,6 @@
 {
   "name": "popsicle-server",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "description": "Automatically connect HTTP(s) servers to a randomly available port for each request",
   "main": "popsicle-server.js",
   "files": [
