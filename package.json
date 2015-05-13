@@ -41,6 +41,6 @@
     "standard": "^3.0.0-alpha"
   },
   "dependencies": {
-    "server-address": "0.0.2"
+    "server-address": "^1.0.0"
   }
 }
