@@ -14,15 +14,15 @@ module.exports = popsicleServer
 function popsicleServer (app) {
   var server = serverAddress(app)
 
-  return function (req) {
-    req.before(function () {
+  return function (self) {
+    self.before(function (req) {
       server.listen()
 
       // Update the URL before the request runs.
       req.url = server.url(req.url)
     })
 
-    req.always(function () {
+    self.always(function () {
       server.close()
     })
   }
