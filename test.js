@@ -11,7 +11,7 @@ var server = require('./')
 
 describe('popsicle server', function () {
   it('should automatically mount the server', function () {
-    return popsicle('/foo')
+    return popsicle.get('/foo')
       .use(server(handler))
       .then(function (res) {
         expect(res.body).to.equal('GET /foo')

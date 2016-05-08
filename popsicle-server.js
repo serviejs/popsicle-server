@@ -1,4 +1,5 @@
 var serverAddress = require('server-address')
+var promiseFinally = require('promise-finally').default
 
 /**
  * Exports `popsicleServer`.
@@ -14,15 +15,12 @@ module.exports = popsicleServer
 function popsicleServer (app) {
   var server = serverAddress(app)
 
-  return function (self) {
-    self.before(function (req) {
-      server.listen()
+  return function (req, next) {
+    server.listen()
 
-      // Update the URL before the request runs.
-      req.url = server.url(req.url)
-    })
+    req.url = server.url(req.url)
 
-    self.always(function () {
+    return promiseFinally(next(), function () {
       server.close()
     })
   }
