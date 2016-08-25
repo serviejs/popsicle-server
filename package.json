@@ -40,7 +40,7 @@
     "mocha": "^3.0.0",
     "popsicle": "^8.0.0",
     "pre-commit": "^1.0.6",
-    "standard": "^7.0.1"
+    "standard": "^8.0.0"
   },
   "dependencies": {
     "promise-finally": "^2.1.0",
