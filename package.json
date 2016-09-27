@@ -35,7 +35,7 @@
   "homepage": "https://github.com/blakeembrey/popsicle-server",
   "devDependencies": {
     "chai": "^3.5.0",
-    "es6-promise": "^3.1.2",
+    "es6-promise": "^4.0.0",
     "istanbul": "^0.4.3",
     "mocha": "^3.0.0",
     "popsicle": "^8.0.0",
