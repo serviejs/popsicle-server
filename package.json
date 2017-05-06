@@ -38,12 +38,12 @@
     "es6-promise": "^4.0.0",
     "istanbul": "^0.4.3",
     "mocha": "^3.0.0",
-    "popsicle": "^8.0.0",
+    "popsicle": "^9.1.0",
     "pre-commit": "^1.0.6",
-    "standard": "^8.0.0"
+    "standard": "^10.0.2"
   },
   "dependencies": {
-    "promise-finally": "^2.1.0",
+    "promise-finally": "^3.0.0",
     "server-address": "^1.0.0"
   }
 }
