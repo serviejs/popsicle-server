@@ -1,5 +1,7 @@
 # Popsicle Server
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/blakeembrey/popsicle-server.svg)](https://greenkeeper.io/)
+
 [![NPM version][npm-image]][npm-url]
 [![NPM Downloads][downloads-image]][downloads-url]
 [![Build status][travis-image]][travis-url]
