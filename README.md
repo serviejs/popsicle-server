@@ -4,6 +4,7 @@
 [![NPM Downloads][downloads-image]][downloads-url]
 [![Build status][travis-image]][travis-url]
 [![Test coverage][coveralls-image]][coveralls-url]
+[![Greenkeeper badge](https://badges.greenkeeper.io/blakeembrey/popsicle-server.svg)](https://greenkeeper.io/)
 
 Automatically connect HTTP(s) servers to a randomly available port for each request. Makes testing your Express/Connect/Node servers easy!
 
