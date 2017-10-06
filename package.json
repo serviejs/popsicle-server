@@ -44,6 +44,6 @@
   },
   "dependencies": {
     "promise-finally": "^3.0.0",
-    "server-address": "^1.0.0"
+    "server-address": "^2.0.0"
   }
 }
